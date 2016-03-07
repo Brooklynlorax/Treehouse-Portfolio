@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -40,6 +40,10 @@ a:hover {
   padding: 0;
 }
 
+h4 {
+  margin-bottom: 4px;
+  }
+
 .nav .name {
     display: block;
     margin-right: auto;
@@ -57,7 +61,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/brooklyn.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -67,8 +71,8 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  max-width: 148px;
+  height: auto;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
@@ -83,8 +87,9 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
+  opacity: 0.7;
   background-color: #222;
   color: yellow;
 }
@@ -100,6 +105,17 @@ header .profile-image:hover {
 }
 .card:hover {
   border-color: #ff99ff;
+}
+
+.card-extend {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 1000px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
 }
 
 ul.skills {
@@ -167,12 +183,21 @@ a.social:hover {
   clear: both;
 }
 
+.reduce-text {
+  font-size: 90%;
+  margin-bottom: 4px;
+}
+
+p {
+  margin-top: 0px;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
